@@ -1,3 +1,4 @@
 .env
 ml/
 ProcessedData/
+__pycache__/
