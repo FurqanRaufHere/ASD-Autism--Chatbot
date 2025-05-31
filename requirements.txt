@@ -1,0 +1,22 @@
+# PDF extraction
+pdfplumber==0.10.2
+
+# Text chunking & utility
+langchain>=0.2.0
+tqdm>=4.66.1
+
+# Embedding model
+sentence-transformers==2.2.2
+numpy>=1.24.0
+
+# Vector search
+faiss-cpu==1.7.4
+
+# Google Gemini Flash API
+google-generativeai==0.3.2
+
+# Frontend
+streamlit==1.33.0
+
+# Secure environment variable handling
+python-dotenv==1.0.1
