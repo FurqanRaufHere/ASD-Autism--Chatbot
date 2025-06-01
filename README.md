@@ -20,7 +20,7 @@
 - **Text Chunking & Utility:** langchain, tqdm – Chunks large text and tracks progress.
 - **Embedding Model:** sentence-transformers, numpy – Converts text into vector embeddings.
 - **Vector Search:** faiss-cpu – Enables fast similarity-based search.
-- **LLM Integration:** google-generativeai – Communicates with Gemini Flash 2.0.
+- **LLM Integration:** google-generativeai – Communicates with Gemini Flash 2.0. Used for custom responses.
 - **Frontend UI:** streamlit – Builds an interactive and user-friendly web interface.
 - **Environment Management:** python-dotenv – Loads secure API keys from .env file.
 
