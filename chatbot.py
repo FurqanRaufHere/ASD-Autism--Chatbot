@@ -28,12 +28,6 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 # Load Gemini model
 gemini = genai.GenerativeModel("gemini-2.0-flash")
 
-# Load system prompt
-# SYSTEM_PROMPT = """
-# You are an empathetic, knowledgeable AI assistant specializing in Autism Spectrum Disorder (ASD).
-# Answer queries using evidence from the provided context. Your tone should be caring and informative.
-# """
-
 SYSTEM_PROMPT = """
 ===========================
 🧠 SYSTEM ROLE DEFINITION
