@@ -1,31 +1,3 @@
-# import streamlit as st
-# from chatbot import generate_answer
-
-# # Streamlit page config
-# st.set_page_config(
-#     page_title="ASD Chatbot",
-#     page_icon="🧠",
-#     layout="centered"
-# )
-
-# # App title
-# st.markdown("<h1 style='text-align: center; color: #4B0082;'>ASD Chatbot 🤖</h1>", unsafe_allow_html=True)
-# st.markdown("<p style='text-align: center;'>An AI assistant for Autism Spectrum Disorder – powered by Gemini Flash & FAISS</p>", unsafe_allow_html=True)
-# st.markdown("---")
-
-# # Text input
-# user_query = st.text_input("Ask something about Autism Spectrum Disorder:", placeholder="E.g., What are the symptoms of ASD?")
-
-# # Ask button
-# if user_query:
-#     with st.spinner("Thinking... 🤔"):
-#         response = generate_answer(user_query)
-#     st.markdown("### 💬 Chatbot Response")
-#     st.markdown(f"<div style='background-color: #f0f8ff; padding: 15px; border-radius: 10px;'>{response}</div>", unsafe_allow_html=True)
-
-
-
-
 import streamlit as st
 from chatbot import generate_answer
 
