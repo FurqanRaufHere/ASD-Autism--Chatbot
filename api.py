@@ -20,10 +20,22 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     response: str
 
+import time
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(request: ChatRequest):
+    logging.info(f"Received query: {request.query}")
+    start_time = time.time()
     try:
-        answer = generate_answer(request.query)
+        # Temporary dummy response for testing
+        # answer = generate_answer(request.query)
+        answer = "This is a dummy response for testing."
+        elapsed = time.time() - start_time
+        logging.info(f"Responding in {elapsed:.2f} seconds")
         return ChatResponse(response=answer)
     except Exception as e:
+        logging.error(f"Error in chat_endpoint: {e}")
         raise HTTPException(status_code=500, detail=str(e))
