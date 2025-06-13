@@ -30,9 +30,7 @@ async def chat_endpoint(request: ChatRequest):
     logging.info(f"Received query: {request.query}")
     start_time = time.time()
     try:
-        # Temporary dummy response for testing
-        # answer = generate_answer(request.query)
-        answer = "This is a dummy response for testing."
+        answer = generate_answer(request.query)
         elapsed = time.time() - start_time
         logging.info(f"Responding in {elapsed:.2f} seconds")
         return ChatResponse(response=answer)
