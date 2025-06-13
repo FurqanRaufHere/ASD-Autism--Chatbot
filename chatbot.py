@@ -65,15 +65,25 @@ _"I hope this helps! If you have more questions, feel free to ask—I'm here to 
 
 
 
+import logging
+
 def retrieve_context(query, k=5):
-    query_vector = model.encode([query]).astype("float32")
-    distances, indices = index.search(query_vector, k)
-    retrieved = [metadata[i]['text'] for i in indices[0]]
-    return "\n\n".join(retrieved)
+    try:
+        query_vector = model.encode([query]).astype("float32")
+        distances, indices = index.search(query_vector, k)
+        retrieved = [metadata[i]['text'] for i in indices[0]]
+        return "\n\n".join(retrieved)
+    except Exception as e:
+        logging.error(f"Error in retrieve_context: {e}")
+        return ""
 
 def generate_answer(user_query):
-    context = retrieve_context(user_query)
-    prompt = f"{SYSTEM_PROMPT}\n\nContext:\n{context}\n\nUser: {user_query}\nAssistant:"
-    
-    response = gemini.generate_content(prompt)
-    return response.text
+    try:
+        context = retrieve_context(user_query)
+        prompt = f"{SYSTEM_PROMPT}\n\nContext:\n{context}\n\nUser: {user_query}\nAssistant:"
+        response = gemini.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        logging.error(f"Error in generate_answer: {e}")
+        # Return a safe error message instead of raising
+        return "I'm sorry, but I am currently unable to process your request. Please try again later."
