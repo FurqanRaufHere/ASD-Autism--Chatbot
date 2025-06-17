@@ -6,7 +6,7 @@
 
 ## Features
 
-- **Conversational AI:** Provide insightful and personalized answers regarding Autism Spectrum Disorder.
+- **Conversational AI:** Provide insightful and personalized answers regarding Autism Spectrum Disorder (ASD).
 - **Empathetic Tone:** Responses are designed to be understanding and sensitive to the needs of users seeking ASD-related information.
 - **Contextual Knowledge Retrieval:** Uses **FAISS** (Facebook AI Similarity Search) to efficiently retrieve relevant data from a vectorized knowledge base.
 - **Responsive Interface:** Built with **Streamlit** to ensure the chatbot works seamlessly across all devices (mobile, tablet, desktop).
