@@ -85,5 +85,5 @@ def generate_answer(user_query):
         return response.text
     except Exception as e:
         logging.error(f"Error in generate_answer: {e}")
-        # Return a safe error message instead of raising
+        # Return a safe error message instead
         return "I'm sorry, but I am currently unable to process your request. Please try again later."
