@@ -18,7 +18,7 @@ with open(CHUNK_FILE, "r", encoding="utf-8") as f:
     chunks = json.load(f)
 
 # Embed chunks
-print("🧠 Generating embeddings...")
+print("Generating embeddings...")
 texts = [chunk["text"] for chunk in chunks]
 embeddings = model.encode(texts, show_progress_bar=True)
 
@@ -32,7 +32,7 @@ index.add(embeddings)
 
 # Save FAISS index
 faiss.write_index(index, INDEX_FILE)
-print(f"✅ FAISS index saved to {INDEX_FILE}")
+print(f"FAISS index saved to {INDEX_FILE}")
 
 # Save metadata (chunk text and source file)
 metadata = [{"text": chunk["text"], "source": chunk["source"]} for chunk in chunks]
