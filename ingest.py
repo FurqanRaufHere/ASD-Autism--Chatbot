@@ -9,7 +9,7 @@ OUTPUT_DIR = "./ProcessedData"
 EXTRACTED_FILE = os.path.join(OUTPUT_DIR, "extracted_texts.json")
 CHUNK_FILE = os.path.join(OUTPUT_DIR, "chunks.json")
 
-# Ensure output directory exists
+# Ensuring output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def extract_text_from_pdfs(pdf_dir):
