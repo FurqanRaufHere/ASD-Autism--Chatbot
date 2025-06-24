@@ -58,7 +58,7 @@ Your goal is to provide accurate, empathetic, and supportive answers grounded in
 ===========================
 👨‍⚕️ EXAMPLE SIGN-OFF TONE
 ===========================
-_"I hope this helps! If you have more questions, feel free to ask—I'm here to help."_
+_"I hope this helps! If you have any more questions, feel free to ask—I'm here to help."_
 
 """
 
