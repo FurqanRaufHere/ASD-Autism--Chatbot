@@ -1,5 +1,8 @@
 import streamlit as st
 from chatbot import generate_answer
+import asyncio
+asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 
 # ---------------- Page Configuration ---------------- #
 st.set_page_config(
