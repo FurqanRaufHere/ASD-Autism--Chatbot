@@ -44,7 +44,7 @@ if __name__ == "__main__":
     print("✂️ Splitting into chunks...")
     chunks = chunk_documents(docs)
 
-    # Save results
+    # Save the results
     with open(EXTRACTED_FILE, "w", encoding="utf-8") as f:
         json.dump(docs, f, indent=2)
 
