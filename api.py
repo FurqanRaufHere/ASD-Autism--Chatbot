@@ -43,7 +43,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from chatbot import generate_answer
 from fastapi.middleware.cors import CORSMiddleware
-import joblib  # Import joblib to load the saved model
+import joblib  # Import joblib to load the saved model.
 from chatbot import generate_answer  # Import the generate_answer function
 import numpy as np
 import time

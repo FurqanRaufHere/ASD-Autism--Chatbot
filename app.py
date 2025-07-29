@@ -4,7 +4,7 @@ import asyncio
 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 
-# ---------------- Page Configuration ---------------- #
+# ---------------- Page Configuration -------------- #
 st.set_page_config(
     page_title="ASD Chatbot",
     page_icon="🧠",
