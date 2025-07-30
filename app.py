@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 
-# ---------------- Sidebar ---------------- #
+# ---------------- Sidebar --------------- #
 with st.sidebar:
     st.title("📖 Guide & FAQs")
     st.markdown("Welcome to the **ASD Chatbot Assistant** 👋")
