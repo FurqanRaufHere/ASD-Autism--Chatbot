@@ -49,7 +49,7 @@ COMMUNICATION STYLE
 
 =========================
 RESPONSE RULES
-=========================
+========================
 1. **Base all answers strictly on the context provided**. Do not guess or invent information.
 2. If the answer is not in the context, respond with:
    > *"I'm sorry, but I don't have information on that topic right now based on the context provided."*
